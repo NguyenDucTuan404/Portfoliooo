@@ -1,0 +1,43 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    max-width: 100%;
+    width: 100%;
+}
+
+button {
+    text-align: center;
+    color: #fff;
+    background-color: var(--gray-color);
+    padding: .8rem 2.5rem;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    transition: var(--smooth);
+}
+
+button:hover {
+    background-color: var(--green-light);
+    transition: var(--smooth);
+}
+
+:root {
+    --green-color: #54b192;
+    --gray-color: #3f3d56;
+    --green-light: #a4cec0;
+    --smooth: all .3s ease-in;
+}
